@@ -1,5 +1,4 @@
 pip install Django==4.0.3
 pip install pymysql
-manage.py migrate
-manage.py runserver
 python.exe .\manage.py sqlmigrate modelos 0002
+python.exe .\manage.py runserver
