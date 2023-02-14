@@ -1,5 +1,5 @@
 # aplicacion_invemar
-pip install Django==4.0.3
-pip install pymysql
-python.exe .\manage.py sqlmigrate modelos 0002
-python.exe .\manage.py runserver
+pip install Django==4.0.3\n
+pip install pymysql\n
+python.exe manage.py sqlmigrate modelos 0002\n
+python.exe manage.py runserver\n
