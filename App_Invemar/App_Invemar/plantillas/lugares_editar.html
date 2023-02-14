@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Editar Lugares de avistamiento</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>
+            Lugares
+        </h1>
+        <br>
+        <br>
+        <table class="table">
+        <thead>
+            <th>id</th>
+            <th>pais</th>
+            <th>departamento</th>
+            <th>ciudad</th>
+            <th>lugar</th>
+            <th>Actualizar</th>
+        </thead>
+        <tbody>
+            <tr>
+                <form action="/lugares_actualizar" method="get">
+                    <td><input class="form-control" type="text" name="id" value="{{lugares_guardados.id}}" readonly></td>
+                    <td><input class="form-control" type="text" name="pais" value="{{lugares_guardados.pais}}"></td>
+                    <td><input class="form-control" type="text" name="departamento" value="{{lugares_guardados.departamento}}"></td>
+                    <td><input class="form-control" type="text" name="ciudad" value="{{lugares_guardados.ciudad}}"></td>
+                    <td><input class="form-control" type="text" name="lugar" value="{{lugares_guardados.lugar}}"></td>
+                    <td><input class="btn btn-primary" type="submit" value="Actualizar"></td>
+                </form>
+            </tr>
+        </tbody>
+    </table>
+    
+    <a href="/lugares">Atras</a>
+    
+</div>
+</body>
+</html>
